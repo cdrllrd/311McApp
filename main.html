@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <style type="text/css">
+      ul{
+        list-style-type:none;
+        margin:0px;
+        padding:0px;
+      }
+      li{
+        border:1px solid black;
+        margin-top:2px;
+        width:300px;
+      }
+      li:hover{
+        background-color:yellow;
+      }
+      li:active{
+        background-color:green;
+      }
+    </style>
+    <link rel="stylesheet" media="all" type="text/css" href="css/ui-lightness/jquery-ui-1.8.16.custom.css">
+  </head>
+  <body>
+    <ul id="items">
+    </ul>
+    <form action="/report.html" style="border:1px solid black;">
+      <label for="from">From:</label>
+      <input type="text" id="from" name="from" value >
+      <br/>
+      <label for="to">To:</label>
+      <input type="text" id="to"   name="to"   value >
+      <br/>
+      <input type="submit" value="Generate Report">
+    </form>
+
+    <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript" src="js/timepicker.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

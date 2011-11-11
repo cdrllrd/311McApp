@@ -1,0 +1,18 @@
+{
+  "name": "McCanada Tracker",
+    "description": "Keep track of what people are ordering at McCanada",
+    "version": "1",
+    "app": {
+      "launch": {
+        "local_path": "main.html"
+      }
+    },
+/*    "icons": {
+      "128": "icon_128.png"
+    },*/
+    "offline_enabled": true,
+    "permissions": [
+      "unlimitedStorage",
+      "http://cs.uwindsor.ca/"
+      ]
+}
