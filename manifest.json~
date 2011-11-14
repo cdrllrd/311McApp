@@ -7,11 +7,9 @@
         "local_path": "index.html"
       }
     },
-    "icons": {
-      "128": "icon128.png",
-      "48": "icon128.png",
-      "16": "icon128.png"
-    },
+/*    "icons": {
+      "128": "icon_128.png"
+    },*/
     "offline_enabled": true,
     "permissions": [
       "unlimitedStorage",

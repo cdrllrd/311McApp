@@ -92,7 +92,7 @@ function getFS(callback)
 }
 
 function encrypt(str) {
-  var key = "lkajbvkjaebrfjalskjdfhaklsdfhlaksjhdfjcnlakrnvkljashdkfjhalskdjnlakwefqwehfak";
+  key = "lkajbvkjaebrfjalskjdfhaklsdfhlaksjhdfjcnlakrnvkljashdkfjhalskdjnlakwefqwehfak";
   var res = "";
   for (var i in str) {
     res += String.fromCharCode(str.charCodeAt(i)^key.charCodeAt(i%key.length))
