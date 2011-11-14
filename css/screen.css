@@ -1,0 +1,168 @@
+	body {
+		background: #93c3bc;
+		color: #F7F7F7;
+		font-size: 87.5%; /* Base font size: 14px */
+		font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		line-height: 1.429;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+	}
+	
+	/*HTML5 Tags*/
+	header, section, footer,
+	aside, nav, article, figure {
+		display: block;	
+	}
+	
+	
+	/* Layout */
+	.body {clear: both; margin: 0 auto; width:800px;}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+      ul{
+        list-style-type:none;
+        margin:0px;
+        padding:0px;
+      }
+      li{
+        text-align:center;
+        background:#4D90FE;
+        margin-top:4px;
+        padding:2px;
+        width:300px;
+        border-radius: 2px;
+        color:white;
+        cursor:default;
+        -webkit-user-select:none;
+        -webkit-box-shadow: 1px 1px 2px #888;
+        border:1px solid #3079ED;
+      }
+      li:hover{
+        background:#3079ED;
+        -webkit-transform: scale(1.01);
+        border:1px solid #1362DC;
+      }
+      li:active{
+        -webkit-box-shadow: 2px 2px 4px #555;
+      }
+      div.rightPane{
+        -webkit-user-select:none;
+        position:absolute;
+        left:50%;
+        padding-left:10px;
+      }
+      div.leftPane{
+        -webkit-user-select:none;
+        position:absolute;
+        right:50%;
+        padding-right:10px;
+      }
+      div.wrapper{
+        position:relative;
+      }
+      
+      
+      
+      
+      
+      
+	/*
+	Header
+	*****************/
+	#banner {
+		margin: 0 auto;
+		padding: 2.5em 0 0 0;
+	}
+	
+	/* Banner */
+	#banner h1 {font-size: 3.571em; line-height: .6;}
+	#banner h1 a:link, #banner h1 a:visited {
+		color: #000305;
+		display: block;
+		font-weight: bold;
+		margin: 0 0 .6em .2em;
+		text-decoration: none;
+		width: 427px;
+	}
+	#banner h1 a:hover, #banner h1 a:active {
+		background: none;
+		color: #fff;
+		text-shadow: none;
+	}
+	
+	#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+	
+	/* Main Nav */
+	#banner nav {
+		background: #d62020;
+		font-size: 1.143em;
+		height: 40px;
+		line-height: 30px;
+		margin: 0 auto 2em auto;
+		padding: 0;
+		text-align: center;
+		width: 800px;
+	
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+	
+	#banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
+	#banner nav li {float: left; display: inline; margin: 0;}
+	
+	#banner nav a:link, #banner nav a:visited {
+		color: #fff;
+		display: inline-block;
+		height: 30px;
+		padding: 5px 1.5em;
+		text-decoration: none;
+	}
+	#banner nav a:hover, #banner nav a:active,
+	#banner nav .active a:link, #banner nav .active a:visited {
+		background-color:#fff;
+		color: #d62020;
+		text-shadow: none !important;
+	}
+	
+	#banner nav li:first-child a {
+		border-top-left-radius: 5px;
+		-moz-border-radius-topleft: 5px;
+		-webkit-border-top-left-radius: 5px;
+	
+		border-bottom-left-radius: 5px;
+		-moz-border-radius-bottomleft: 5px;
+		-webkit-border-bottom-left-radius: 5px;
+	}
+	
+	
+	/*
+		Body
+	*****************/
+	#content {
+		background: #fff;
+		margin-bottom: 2em;
+		overflow: hidden;
+		padding: 20px 20px;
+		width: 760px;
+		color: #000000;
+		height: 800px;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+	}
+		
+
+	/*
+		Footer
+	*****************/
+	#contentinfo {padding-bottom: 2em; text-align: center;}
+	#contentinfo a:hover {text-decoration: none; text-shadow: none;}

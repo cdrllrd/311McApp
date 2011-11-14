@@ -1,21 +1,55 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" media="all" type="text/css" href="css/screen.css">
+    <style type="text/css">
+      body{
+        background: #93C3BC;
+        font-family:Arial,sans-serif;
+      }
+      ul{
+        list-style-type:none;
+        margin:0px;
+        padding:0px;
+      }
+      li{
+        text-align:center;
+        background:#4D90FE;
+        margin-top:4px;
+        padding:2px;
+        width:300px;
+        border-radius: 2px;
+        color:white;
+        cursor:default;
+        -webkit-user-select:none;
+        -webkit-box-shadow: 1px 1px 2px #888;
+        border:1px solid #3079ED;
+      }
+      li:hover{
+        background:#3079ED;
+        -webkit-transform: scale(1.01);
+        border:1px solid #1362DC;
+      }
+      li:active{
+        -webkit-box-shadow: 2px 2px 4px #555;
+      }
+      div.rightPane{
+        -webkit-user-select:none;
+        position:absolute;
+        left:50%;
+        padding-left:10px;
+      }
+      div.leftPane{
+        -webkit-user-select:none;
+        position:absolute;
+        right:50%;
+        padding-right:10px;
+      }
+      div.wrapper{
+        position:relative;
+      }
+    </style>
     <link rel="stylesheet" media="all" type="text/css" href="css/ui-lightness/jquery-ui-1.8.16.custom.css">
   </head>
-  
-  <body id="index" class="home">
-    <header id="banner" class="body"> 
-      <h1>McCanada</h1>
-      <h2>I'm enjoyin' it</h2>
-      <nav> 
-        Shoebox Accounting System (SAS)
-      </nav> 
-    </header> 
-  
-    <section id="content" class="body">
-  
+  <body>
     <div class="wrapper">
       <div class="leftPane">
         <ul id="items">
@@ -66,12 +100,6 @@
         </fieldset>
       </div>
     </div>
-    
-    </section>
-    
-    <footer id="contentinfo" class="body">
-    	McCanada 311
-    </footer>
 
     <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>

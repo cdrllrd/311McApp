@@ -37,7 +37,7 @@ getFS(function(fs){
           localStorage.setItem("receipts",receipts);
           localStorage.setItem("money",money);
           $('#receipts')[0].innerText = localStorage.getItem("receipts");
-          $('#money')[0].innerText = "$" + localStorage.getItem("money");
+          $('#money')[0].innerText = localStorage.getItem("money");
 
           bb.append(JSON.stringify(purch)+"\n");
           fileWriter.write(bb.getBlob('text/plain'));
@@ -61,7 +61,7 @@ getFS(function(fs){
       localStorage.setItem("receipts",0);
       localStorage.setItem("money",0);
       $('#receipts')[0].innerText = localStorage.getItem("receipts");
-      $('#money')[0].innerText = "$" + localStorage.getItem("money");
+      $('#money')[0].innerText = localStorage.getItem("money");
     },false);
 });
 
@@ -69,7 +69,7 @@ $('#validReset')[0].addEventListener("click",function(){
   localStorage.setItem("receipts",0);
   localStorage.setItem("money",0);
   $('#receipts')[0].innerText = localStorage.getItem("receipts");
-  $('#money')[0].innerText = "$" + localStorage.getItem("money");
+  $('#money')[0].innerText = localStorage.getItem("money");
 },false);
 
 if(localStorage.getItem("receipts") == null) {
@@ -79,7 +79,7 @@ if(localStorage.getItem("money") == null) {
   localStorage.setItem("money",0);
 }
 $('#receipts')[0].innerText = localStorage.getItem("receipts");
-$('#money')[0].innerText = "$" + localStorage.getItem("money");
+$('#money')[0].innerText = localStorage.getItem("money");
 
 $('#to').datetimepicker({ampm:true});
 $('#from').datetimepicker({ampm:true});
