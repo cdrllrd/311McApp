@@ -4,15 +4,28 @@
       td{
         padding-left:20px;
       }
+      ul{
+        list-style-type:none;
+        margin:3px 0px 7px 0px;
+        padding:0px;
+      }
     </style>
     <link rel="stylesheet" media="all" type="text/css" href="css/ui-lightness/jquery-ui-1.8.16.custom.css">
   </head>
   <body>
     <center>
 
-      <div id="default" style="width:400;height:400;"></div>
+      <div style="border:1px solid black;width:600px;padding:5px;">
+        <h1>Sales Breakdown</h1>
+        <h2 id="range">from to</h1>
+        <div id="default" style="width:400;height:400;"></div>
+      </div>
+      <br>
+      <span style="font-weight:bold;">Recommended Specials</span>
+      <ul id="specials">
+      </ul>
       <table id="items">
-        <tr style="text-align:center;">
+        <tr style="text-align:center;font-weight:bold;">
           <td>Name</td><td>Categories</td><td>Date/Time</td>
         </tr>
       </table>
