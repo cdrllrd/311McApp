@@ -73,21 +73,6 @@ function plotGraph(color_count) {
     });
 }
 
-function getLogTR(purch) {
-  var tr = document.createElement('tr');
-  var td_name = document.createElement('td');
-  var td_colr = document.createElement('td');
-  var td_date = document.createElement('td');
-  var date = new Date(purch.d);
-
-  td_name.innerText = purch.name;
-  td_colr.innerText = getColr(purch.colr);
-  td_date.innerText = getDate(date) + " " + getTime(date);
-  tr.appendChild(td_name);
-  tr.appendChild(td_colr);
-  tr.appendChild(td_date);
-  return tr;
-}
 
 getFS(function(fs) {
   var range = getRange();
@@ -115,7 +100,6 @@ getFS(function(fs) {
             var date = new Date(purch.d);
             if ( date <= to_date && date >= from_date ) {
               ++purch_count[purch.id];
-              table.appendChild(getLogTR(purch));
               for (var i in purch.colr){
                 color_count[i] += 1;
               }
