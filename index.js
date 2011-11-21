@@ -20,7 +20,16 @@ getFS(function(fs){
   var ul = $('#items')[0];
   for (var i = 0; i < items.length; ++i) {
     var d = document.createElement('li');
-    d.innerText = items[i].name;
+    var test = "";
+    
+      /*Get all the colors for each element, add them to the li element's class for
+      styling*/
+      for(var c in items[i].colrs)
+    	{
+    	  d.classList.add(c);
+    	}
+    	
+    	d.innerText = items[i].name;
     d.id = i;
     d.addEventListener("click",function(e) {
       that = this;
