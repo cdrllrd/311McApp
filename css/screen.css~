@@ -45,6 +45,13 @@
         -webkit-user-select:none;
         -webkit-box-shadow: 1px 1px 2px #888;
         border:1px solid #3079ED;
+        background-image: -webkit-linear-gradient( 
+        		left, 
+        		#4D90FE 260px, 
+        		red 270px, 
+        		green 280px, 
+        		blue 290px, 
+        		yellow 300px);
       }
       li:hover{
         background:#3079ED;
@@ -70,6 +77,17 @@
         position:relative;
       }
       
+      
+      div.gradDiv {
+      	     width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 10px auto;
+    resize: both;
+    overflow: hidden; 
+    background-image: -webkit-linear-gradient(left, red, green, blue, yellow);
+      }
+
       
       
       

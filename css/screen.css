@@ -20,38 +20,29 @@
 	.body {clear: both; margin: 0 auto; width:800px;}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-      ul{
+      #items ul {
         list-style-type:none;
         margin:0px;
         padding:0px;
       }
+      
+      #items li li {
+        background: transparent;
+        width: 20px;
+      }
+            
       li{
         text-align:center;
         background:#4D90FE;
         margin-top:4px;
         padding:2px;
-        width:300px;
+        width:250px;
         border-radius: 2px;
         color:white;
         cursor:default;
         -webkit-user-select:none;
         -webkit-box-shadow: 1px 1px 2px #888;
         border:1px solid #3079ED;
-        background-image: -webkit-linear-gradient( 
-        		left, 
-        		#4D90FE 260px, 
-        		red 270px, 
-        		green 280px, 
-        		blue 290px, 
-        		yellow 300px);
       }
       li:hover{
         background:#3079ED;
@@ -77,18 +68,8 @@
         position:relative;
       }
       
-      
-      div.gradDiv {
-      	     width: 200px;
-    height: 150px;
-    border: 1px solid black;
-    margin: 10px auto;
-    resize: both;
-    overflow: hidden; 
-    background-image: -webkit-linear-gradient(left, red, green, blue, yellow);
-      }
-
-      
+     
+ 
       
       
       
@@ -173,7 +154,7 @@
 		padding: 20px 20px;
 		width: 760px;
 		color: #000000;
-		height: 800px;
+		height: 1200px;
 		border-radius: 10px;
 		-webkit-border-radius: 10px;
 	}

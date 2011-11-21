@@ -20,16 +20,16 @@ getFS(function(fs){
   var ul = $('#items')[0];
   for (var i = 0; i < items.length; ++i) {
     var d = document.createElement('li');
-    var test = "";
+    d.innerText = items[i].name;
+    var e = d.appendChild(document.createElement("ul"));
     
-      /*Get all the colors for each element, add them to the li element's class for
-      styling*/
+      /*Add css class based on JSON*/
       for(var c in items[i].colrs)
     	{
-    	  d.classList.add(c);
+    	  e.classList.add(c);
+    	  e.innerHTML += '<img src="circle_' + c + '.png" alt="blue" />';
     	}
     	
-    	d.innerText = items[i].name;
     d.id = i;
     d.addEventListener("click",function(e) {
       that = this;
@@ -56,6 +56,12 @@ getFS(function(fs){
     },false);
     ul.appendChild(d);
   }
+  //Add icon based on css class
+  /*$('.yellow').append('<li><img src="circle_yellow.png" alt="yellow" /></li>');
+  $('.green').append('<li><img src="circle_green.png" alt="green" /></li>');
+  $('.blue').append('<li><img src="circle_blue.png" alt="blue" /></li>');
+  $('.orange').append('<li><img src="circle_orange.png" alt="orange" /></li>');
+  $('.red').append('<li><img src="circle_red.png" alt="red" /></li>');*/
 });
 
 getFS(function(fs){
@@ -92,3 +98,6 @@ $('#money')[0].innerText = "$" + localStorage.getItem("money");
 
 $('#to').datetimepicker({ampm:true});
 $('#from').datetimepicker({ampm:true});
+
+
+

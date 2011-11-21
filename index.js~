@@ -24,12 +24,9 @@ getFS(function(fs){
     
       /*Get all the colors for each element, add them to the li element's class for
       styling*/
-      
-      for(var c in items.colr)
+      for(var c in items[i].colrs)
     	{
-    	  /*d.className += c;*/
-    	  test += c["red"];
-    	  alert("test");
+    	  d.classList.add(c);
     	}
     	
     	d.innerText = items[i].name;

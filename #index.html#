@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" media="all" type="text/css" href="css/screen.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/ui-lightness/jquery-ui-1.8.16.custom.css">
+  </head>
+  
+  <body id="index" class="home">
+    <header id="banner" class="body"> 
+      <h1>McCanada</h1>
+      <h2>I'm enjoyin' it</h2>
+      <nav> 
+        Shoebox Accounting System (SAS)
+      </nav> 
+    </header> 
+  
+    <section id="content" class="body">
+  
+    <div class="wrapper">
+      <div class="leftPane">
+        <ul id="items">
+        </ul>
+      </div>
+      <div class="rightPane">
+        <form action="/report.html" style="margin:0px;padding:0px;">
+          <fieldset>
+            <legend>Report</legend>
+            <table>
+              <tr>
+                <td>From:</td>
+                <td><input type="text" id="from" name="from" value ></td>
+              </tr>
+              <tr>
+                <td>To:</td>
+                <td><input type="text" id="to" name="to" value ></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><input type="submit" value="Generate Report"></td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+        <br />
+        <fieldset>
+          <legend>Input Validation</legend>
+          <table>
+            <tr>
+              <td>Items Entered</td>
+              <td id="receipts" style="text-align:center;">0</td>
+            </tr>
+            <tr>
+              <td>Money Collected</td>
+              <td id="money" style="text-align:center;">0</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="button" value="Reset" id="validReset"></td>
+            </tr>
+          </table>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Debug</legend>
+          <input type="button" value="Clear Log" id="clearLog">
+          <form action="logDump.html">
+            <input type="submit" value="Show Log File" id="clearLog">
+          </form>
+        </fieldset>
+      </div>
+    </div>    
+
+    </section>
+    
+    <footer id="contentinfo" class="body">
+    	McCanada 311
+    </footer>
+    
+
+    <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+    <script type="text/javascript" src="js/timepicker.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
