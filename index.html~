@@ -41,7 +41,7 @@
             </table>
           </fieldset>
         </form>
-        <br>
+        <br />
         <fieldset>
           <legend>Input Validation</legend>
           <table>
@@ -59,7 +59,7 @@
             </tr>
           </table>
         </fieldset>
-        <br>
+        <br />
         <fieldset>
           <legend>Debug</legend>
           <input type="button" value="Clear Log" id="clearLog">
