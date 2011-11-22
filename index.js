@@ -21,13 +21,12 @@ getFS(function(fs){
   for (var i = 0; i < items.length; ++i) {
     var d = document.createElement('li');
     d.innerText = items[i].name;
-    var e = d.appendChild(document.createElement("ul"));
     
       /*Add css class based on JSON*/
       for(var c in items[i].colrs)
     	{
-    	  e.classList.add(c);
-    	  e.innerHTML += '<img src="circle_' + c + '.png" alt="blue" />';
+    	  d.classList.add(c);
+    	  d.innerHTML += '<img src="circle_' + c + '.png" alt="blue" />';
     	}
     	
     d.id = i;
